@@ -46,8 +46,7 @@ console.log(`
       console.log(` Parabéns ${nome}!\n Você passou em ${materiaMatematica}!\n A soma de suas Notas de ${materiaMatematica} foram: ${somaNotasMatematica} pontos!\n Você tem uma folga de Notas de ${somaNotasMatematica - notaNecessariaParaPassar} pontos!\n Sua média no ano é de ${mediaMatematica} pontos!`);
     }
     else{
-    console.log
-    (`${nome}.\nVocê não atingiu a Nota para passar em ${materiaMatematica}.\nA soma de suas Notas de ${materiaMatematica} foram: ${somaNotasMatematica} pontos\nFaltaram ${notaNecessariaParaPassar - somaNotasMatematica} pontos para conseguir!\nSua média foi de ${mediaMatematica} pontos no ano.\n`);
+    console.log(`${nome}.\nVocê não atingiu a Nota para passar em ${materiaMatematica}.\nA soma de suas Notas de ${materiaMatematica} foram: ${somaNotasMatematica} pontos\nFaltaram ${notaNecessariaParaPassar - somaNotasMatematica} pontos para conseguir!\nSua média foi de ${mediaMatematica} pontos no ano.\n`);
     }
 
 
@@ -158,7 +157,7 @@ var mediaBiologia = somaNotasBiologia / 4;
 
 /* Notas Biologia Bimestres */
 console.log(`
-  Matéria: ${materiaHistoria}\n
+  Matéria: ${materiaBiologia}\n
   1° Bimestre: ${notaHistoria1}\n
   2° Bimestre: ${notaHistoria2}\n
   3° Bimestre: ${notaHistoria3}\n
@@ -316,10 +315,10 @@ console.log(`
   4° Bimestre: ${notaEdFisica4}\n`)
 
   if(somaNotasEdFisica >= 240){
-    console.log(`\n Parabéns ${nome}!\n Você passou em ${materiaEdFisica}!\n A soma de suas Notas de ${materiaEdFisica} foram: ${somaNotasEdFisica} pontos!\n Você tem uma folga de Notas de ${somaNotasEdFisica - notaNecessariaParaPassar} pontos! \n Sua média no ano é de ${mediaEdFisica} pontos!`);
+    console.log(`\n Parabéns ${nome}!\n Você passou em ${materiaEdFisica}!\n A soma de suas Notas de ${materiaEdFisica} foram: ${somaNotasEdFisica} ponto(s)!\n Você tem uma folga de Notas de ${somaNotasEdFisica - notaNecessariaParaPassar} ponto(s)! \n Sua média no ano é de ${mediaEdFisica} ponto(s)!`);
   }
   else{
-    console.log(`${nome}.\nVocê não atingiu a Nota para passar em ${materiaEdFisica}.\nA soma de suas Notas de ${materiaEdFisica} foram: ${somaNotasEdFisica} pontos\nFaltaram ${notaNecessariaParaPassar - somaNotasEdFisica} pontos para conseguir!\nSua média foi de ${mediaEdFisica} pontos no ano.\n`);
+    console.log(`${nome}.\nVocê não atingiu a Nota para passar em ${materiaEdFisica}.\nA soma de suas Notas de ${materiaEdFisica} foram: ${somaNotasEdFisica} ponto(s)\nFaltaram ${notaNecessariaParaPassar - somaNotasEdFisica} ponto(s) para conseguir!\nSua média foi de ${mediaEdFisica} ponto(s) no ano.\n`);
   }
 
 
@@ -328,13 +327,13 @@ console.log(`
 /* Vendo se o Aluno passou de série calculando a média de todas as matérias*/
 
 
-  somaMedia = mediaMatematica + mediaPortugues + mediaGeografia + mediaHistoria + mediaBiologia + mediaFisica + mediaQuimica + mediaFilosofia + mediaIngles + mediaEdFisica
+  somadeTodasAsNotas = somaNotasMatematica + somaNotasPortugues + somaNotasGeografia + somaNotasHistoria + somaNotasBiologia + somaNotasFisica + somaNotasQuimica + somaNotasFilosofia + somaNotasIngles + somaNotasEdFisica;
 
-  if(somaMedia >= 600){
-    console.log(`\nParabéns ${nome}!!\nVocê foi APROVADO(A)!!! E está na próxima Série!`)
+  if(somadeTodasAsNotas >= 2400){
+    console.log(`\nParabéns ${nome}!!\nVocê foi APROVADO(A)!!! E está na próxima Série!`);
   }
   else{
-    console.log(`${nome}. Infelizmente você foi Reprovado(a).\nVocê terá que repetir a série`)
-  }
+    console.log(`${nome}. Infelizmente você foi Reprovado(a).\nVocê terá que repetir a série`);
+  };
 
   
